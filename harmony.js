@@ -95,7 +95,7 @@ var Harmony = {
         return Harmony.nameToFreq[name];
     },
 
-    triadChordToNotes: function(name, octave) {
+    chordToNotes: function(name, octave) {
 
         if( octave === undefined ) {
             octave = 4;
@@ -164,7 +164,7 @@ var Harmony = {
             Harmony.nameToFreq[noteName] = Harmony.indexToFreq[n];
 
             currentNoteIndex ++;
-            if( baseNoteName == "C" ) {
+            if( baseNoteName == "A" ) {
                 currentOctave ++;
             }
         }
