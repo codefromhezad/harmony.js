@@ -63,7 +63,7 @@ var Harmony = {
     /**
      * Harmony Maths functions
     **/
-    addInterval: function(name, octave, interval) {
+    addSemitones: function(name, octave, interval) {
         var root_index = Harmony.notesPerOctave.indexOf(name.toUpperCase());
         var added_index = root_index + interval;
 
@@ -140,10 +140,10 @@ var Harmony = {
         chord[0] = root_name + "" + octave;
 
         // Find and Write Third
-        chord[1] = Harmony.addInterval(root_name, octave, third_adder);
+        chord[1] = Harmony.addSemitones(root_name, octave, third_adder);
 
         // Find and Write Fifth
-        chord[2] = Harmony.addInterval(root_name, octave, fifth_adder);
+        chord[2] = Harmony.addSemitones(root_name, octave, fifth_adder);
 
         return chord;
     },
