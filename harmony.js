@@ -164,7 +164,7 @@ var Harmony = {
             Harmony.nameToFreq[noteName] = Harmony.indexToFreq[n];
 
             currentNoteIndex ++;
-            if( baseNoteName == "A" ) {
+            if( baseNoteName == "G" ) {
                 currentOctave ++;
             }
         }
