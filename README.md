@@ -20,7 +20,7 @@ While sharp notes are supported in strings (like "D#") flat notes are not. At le
 ## Documentation
 
 
-#### Harmony.chordInfo(chordName)
+##### Harmony.chordInfo(chordName)
 
 Returns an object containing infos about a chord. Only triads are supported for now, so `chordName` is expected 
 to have one of the following forms (example with C#) :
@@ -34,11 +34,11 @@ to have one of the following forms (example with C#) :
 
 ```javascript
 Harmony.chordInfo("C#dim")
+{root: "C#", family: "triadic", type: "dim"}
 ```
-> {root: "C#", family: "triadic", type: "dim"}
 
 
-#### Harmony.addSemitones(noteName, octave, numSemitones)
+##### Harmony.addSemitones(noteName, octave, numSemitones)
 
 Adds `numSemitones` to `noteName`. The octave of the resulting note will be appended to the note name.
 
@@ -47,7 +47,7 @@ Adds `numSemitones` to `noteName`. The octave of the resulting note will be appe
 ```javascript
 // Adds 6 semitones to G#4
 Harmony.addSemitones("G#", 4, 6)
+"D5"
 ```
-> "D5"
 
 
